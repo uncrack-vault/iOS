@@ -11,6 +11,10 @@
 		9AB2887A2B813F44000F759D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB288792B813F44000F759D /* ContentView.swift */; };
 		9AB2887C2B813F45000F759D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB2887B2B813F45000F759D /* Assets.xcassets */; };
 		9AB2887F2B813F45000F759D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB2887E2B813F45000F759D /* Preview Assets.xcassets */; };
+		9AB288872B814517000F759D /* PasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB288862B814517000F759D /* PasswordScreen.swift */; };
+		9AB288892B8145A2000F759D /* GeneratePasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB288882B8145A2000F759D /* GeneratePasswordScreen.swift */; };
+		9AB2888B2B81496C000F759D /* SettingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2888A2B81496C000F759D /* SettingScreen.swift */; };
+		9AB2888D2B814A03000F759D /* CardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2888C2B814A03000F759D /* CardScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		9AB288792B813F44000F759D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9AB2887B2B813F45000F759D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AB2887E2B813F45000F759D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9AB288862B814517000F759D /* PasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordScreen.swift; sourceTree = "<group>"; };
+		9AB288882B8145A2000F759D /* GeneratePasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePasswordScreen.swift; sourceTree = "<group>"; };
+		9AB2888A2B81496C000F759D /* SettingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScreen.swift; sourceTree = "<group>"; };
+		9AB2888C2B814A03000F759D /* CardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 		9AB288762B813F44000F759D /* UnCrack */ = {
 			isa = PBXGroup;
 			children = (
+				9AB288852B8144DB000F759D /* Screen */,
 				9AB288772B813F44000F759D /* UnCrackApp.swift */,
 				9AB288792B813F44000F759D /* ContentView.swift */,
 				9AB2887B2B813F45000F759D /* Assets.xcassets */,
@@ -65,6 +74,17 @@
 				9AB2887E2B813F45000F759D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9AB288852B8144DB000F759D /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				9AB288862B814517000F759D /* PasswordScreen.swift */,
+				9AB288882B8145A2000F759D /* GeneratePasswordScreen.swift */,
+				9AB2888A2B81496C000F759D /* SettingScreen.swift */,
+				9AB2888C2B814A03000F759D /* CardScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB2888B2B81496C000F759D /* SettingScreen.swift in Sources */,
+				9AB288872B814517000F759D /* PasswordScreen.swift in Sources */,
+				9AB288892B8145A2000F759D /* GeneratePasswordScreen.swift in Sources */,
 				9AB2887A2B813F44000F759D /* ContentView.swift in Sources */,
 				9AB288782B813F44000F759D /* UnCrackApp.swift in Sources */,
+				9AB2888D2B814A03000F759D /* CardScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

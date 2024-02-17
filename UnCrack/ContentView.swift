@@ -9,13 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            PasswordScreen()
+                .tabItem {
+                    Image(systemName: "lock")
+                    Text("Passwords")
+                }
+            
+            CardScreen()
+                .tabItem {
+                    Image(systemName: "creditcard")
+                    Text("Cards")
+                }
+            
+            GeneratePasswordScreen()
+                .tabItem {
+                    Image(systemName: "shield.lefthalf.filled.badge.checkmark")
+                    Text("Generate Passwords")
+                }
+            
+            SettingScreen()
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("Setting")
+                }
         }
-        .padding()
     }
 }
 
