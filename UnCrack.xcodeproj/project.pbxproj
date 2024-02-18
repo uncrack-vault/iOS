@@ -15,6 +15,8 @@
 		9AB288892B8145A2000F759D /* GeneratePasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB288882B8145A2000F759D /* GeneratePasswordScreen.swift */; };
 		9AB2888B2B81496C000F759D /* SettingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2888A2B81496C000F759D /* SettingScreen.swift */; };
 		9AB2888D2B814A03000F759D /* CardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2888C2B814A03000F759D /* CardScreen.swift */; };
+		9ADAC5472B81D1E800A5C10F /* PasswordModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAC5452B81D1E800A5C10F /* PasswordModel.xcdatamodeld */; };
+		9ADAC5492B81D30D00A5C10F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAC5482B81D30D00A5C10F /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		9AB288882B8145A2000F759D /* GeneratePasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePasswordScreen.swift; sourceTree = "<group>"; };
 		9AB2888A2B81496C000F759D /* SettingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScreen.swift; sourceTree = "<group>"; };
 		9AB2888C2B814A03000F759D /* CardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScreen.swift; sourceTree = "<group>"; };
+		9ADAC5462B81D1E800A5C10F /* PasswordModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PasswordModel.xcdatamodel; sourceTree = "<group>"; };
+		9ADAC5482B81D30D00A5C10F /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,8 @@
 		9AB288762B813F44000F759D /* UnCrack */ = {
 			isa = PBXGroup;
 			children = (
-				9AB288852B8144DB000F759D /* Screen */,
+				9ADAC5442B81D1CE00A5C10F /* DataModel */,
+				9AB288852B8144DB000F759D /* View */,
 				9AB288772B813F44000F759D /* UnCrackApp.swift */,
 				9AB288792B813F44000F759D /* ContentView.swift */,
 				9AB2887B2B813F45000F759D /* Assets.xcassets */,
@@ -76,7 +81,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		9AB288852B8144DB000F759D /* Screen */ = {
+		9AB288852B8144DB000F759D /* View */ = {
 			isa = PBXGroup;
 			children = (
 				9ADAC5402B81CAD400A5C10F /* CardScreen */,
@@ -84,7 +89,7 @@
 				9ADAC53E2B81CAB600A5C10F /* Settings */,
 				9ADAC53D2B81CAA000A5C10F /* Password */,
 			);
-			path = Screen;
+			path = View;
 			sourceTree = "<group>";
 		};
 		9ADAC53D2B81CAA000A5C10F /* Password */ = {
@@ -117,6 +122,15 @@
 				9AB2888C2B814A03000F759D /* CardScreen.swift */,
 			);
 			path = CardScreen;
+			sourceTree = "<group>";
+		};
+		9ADAC5442B81D1CE00A5C10F /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				9ADAC5452B81D1E800A5C10F /* PasswordModel.xcdatamodeld */,
+				9ADAC5482B81D30D00A5C10F /* DataController.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,10 +203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADAC5472B81D1E800A5C10F /* PasswordModel.xcdatamodeld in Sources */,
 				9AB2888B2B81496C000F759D /* SettingScreen.swift in Sources */,
 				9AB288872B814517000F759D /* PasswordScreen.swift in Sources */,
 				9AB288892B8145A2000F759D /* GeneratePasswordScreen.swift in Sources */,
 				9AB2887A2B813F44000F759D /* ContentView.swift in Sources */,
+				9ADAC5492B81D30D00A5C10F /* DataController.swift in Sources */,
 				9AB288782B813F44000F759D /* UnCrackApp.swift in Sources */,
 				9AB2888D2B814A03000F759D /* CardScreen.swift in Sources */,
 			);
@@ -400,6 +416,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9ADAC5452B81D1E800A5C10F /* PasswordModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9ADAC5462B81D1E800A5C10F /* PasswordModel.xcdatamodel */,
+			);
+			currentVersion = 9ADAC5462B81D1E800A5C10F /* PasswordModel.xcdatamodel */;
+			path = PasswordModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9AB2886C2B813F44000F759D /* Project object */;
 }
