@@ -30,6 +30,7 @@ struct PasswordScreen: View {
                     .onDelete(perform: deletePassword)
                 }
                 .listStyle(.plain)
+                .padding()
             }
             .navigationTitle("Passwords")
             .toolbar {
@@ -52,7 +53,11 @@ struct PasswordScreen: View {
     }
     
     private func deletePassword(offsets: IndexSet) {
-        
+        withAnimation {
+            offsets.map {password[$0]}.forEach(managedObjContext.delete)
+            
+            DataController().save(context: managedObjContext)
+        }
     }
 }
 
