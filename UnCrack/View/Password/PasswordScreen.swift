@@ -8,11 +8,51 @@
 import SwiftUI
 
 struct PasswordScreen: View {
+    
+    @Environment(\.managedObjectContext) var managedObjContext
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)])
+    var password: FetchedResults<Password>
+    @State private var showAddView = false
+    
     var body: some View {
-        VStack {
-            Text("Password Screen!")
+        NavigationView {
+            VStack(alignment: .leading) {
+                List {
+                    ForEach(password) { password in
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text(password.name!)
+                                .bold()
+                            
+                            Text(password.email!)
+                                .foregroundStyle(Color.gray)
+                        }
+                    }
+                    .onDelete(perform: deletePassword)
+                }
+                .listStyle(.plain)
+            }
+            .navigationTitle("Passwords")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        showAddView.toggle()
+                    } label: {
+                        Label("Add Password", systemImage: "plus.circle")
+                    }
+                }
+                ToolbarItem(placement: .navigationBarLeading) {
+                    EditButton()
+                }
+            }
+            .sheet(isPresented: $showAddView) {
+                AddPasswordScreen()
+            }
         }
-        .padding()
+        .navigationViewStyle(.stack)
+    }
+    
+    private func deletePassword(offsets: IndexSet) {
+        
     }
 }
 

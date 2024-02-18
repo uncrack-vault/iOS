@@ -17,6 +17,9 @@
 		9AB2888D2B814A03000F759D /* CardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2888C2B814A03000F759D /* CardScreen.swift */; };
 		9ADAC5472B81D1E800A5C10F /* PasswordModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAC5452B81D1E800A5C10F /* PasswordModel.xcdatamodeld */; };
 		9ADAC5492B81D30D00A5C10F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAC5482B81D30D00A5C10F /* DataController.swift */; };
+		9ADAC54B2B81E6CC00A5C10F /* AddPasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAC54A2B81E6CC00A5C10F /* AddPasswordScreen.swift */; };
+		9ADAC54E2B81F2E600A5C10F /* UCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAC54D2B81F2E600A5C10F /* UCTextField.swift */; };
+		9ADAC5502B81FF6000A5C10F /* UCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAC54F2B81FF6000A5C10F /* UCButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		9AB2888C2B814A03000F759D /* CardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScreen.swift; sourceTree = "<group>"; };
 		9ADAC5462B81D1E800A5C10F /* PasswordModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PasswordModel.xcdatamodel; sourceTree = "<group>"; };
 		9ADAC5482B81D30D00A5C10F /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		9ADAC54A2B81E6CC00A5C10F /* AddPasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordScreen.swift; sourceTree = "<group>"; };
+		9ADAC54D2B81F2E600A5C10F /* UCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCTextField.swift; sourceTree = "<group>"; };
+		9ADAC54F2B81FF6000A5C10F /* UCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 		9AB288762B813F44000F759D /* UnCrack */ = {
 			isa = PBXGroup;
 			children = (
+				9ADAC54C2B81F2B600A5C10F /* Style */,
 				9ADAC5442B81D1CE00A5C10F /* DataModel */,
 				9AB288852B8144DB000F759D /* View */,
 				9AB288772B813F44000F759D /* UnCrackApp.swift */,
@@ -96,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				9AB288862B814517000F759D /* PasswordScreen.swift */,
+				9ADAC54A2B81E6CC00A5C10F /* AddPasswordScreen.swift */,
 			);
 			path = Password;
 			sourceTree = "<group>";
@@ -131,6 +139,15 @@
 				9ADAC5482B81D30D00A5C10F /* DataController.swift */,
 			);
 			path = DataModel;
+			sourceTree = "<group>";
+		};
+		9ADAC54C2B81F2B600A5C10F /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				9ADAC54D2B81F2E600A5C10F /* UCTextField.swift */,
+				9ADAC54F2B81FF6000A5C10F /* UCButton.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADAC54B2B81E6CC00A5C10F /* AddPasswordScreen.swift in Sources */,
+				9ADAC54E2B81F2E600A5C10F /* UCTextField.swift in Sources */,
+				9ADAC5502B81FF6000A5C10F /* UCButton.swift in Sources */,
 				9ADAC5472B81D1E800A5C10F /* PasswordModel.xcdatamodeld in Sources */,
 				9AB2888B2B81496C000F759D /* SettingScreen.swift in Sources */,
 				9AB288872B814517000F759D /* PasswordScreen.swift in Sources */,

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9B43941A-A16D-4EDE-81C3-9793783C49AC"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77AFB7CD-3370-43B8-A589-9E2B735F3232"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UnCrack/View/Password/PasswordScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "77AFB7CD-3370-43B8-A589-9E2B735F3232 - 47e1935df73ef1a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationTitle(SwiftUI.LocalizedStringKey) -&gt; some&gt;&gt;.0 in UnCrack.PasswordScreen.body.getter : some"
+                  moduleName = "UnCrack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aritra/Desktop/SwiftUI/UnCrack/UnCrack/View/Password/PasswordScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "77AFB7CD-3370-43B8-A589-9E2B735F3232 - 1b057d4a7efc6ab8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.EmptyView in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationTitle(SwiftUI.LocalizedStringKey) -&gt; some&gt;&gt;.0 in UnCrack.PasswordScreen.body.getter : some"
+                  moduleName = "UnCrack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aritra/Desktop/SwiftUI/UnCrack/UnCrack/View/Password/PasswordScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "77AFB7CD-3370-43B8-A589-9E2B735F3232 - 5ef417cebe310bb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UnCrack.PasswordScreen.body.getter : some"
+                  moduleName = "UnCrack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aritra/Desktop/SwiftUI/UnCrack/UnCrack/View/Password/PasswordScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "77AFB7CD-3370-43B8-A589-9E2B735F3232 - abc560b526acd0a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationViewStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.NavigationViewStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0 in UnCrack.PasswordScreen.body.getter : some"
+                  moduleName = "UnCrack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aritra/Desktop/SwiftUI/UnCrack/UnCrack/View/Password/PasswordScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "468">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
