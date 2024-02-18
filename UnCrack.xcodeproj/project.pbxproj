@@ -79,12 +79,44 @@
 		9AB288852B8144DB000F759D /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				9AB288862B814517000F759D /* PasswordScreen.swift */,
-				9AB288882B8145A2000F759D /* GeneratePasswordScreen.swift */,
-				9AB2888A2B81496C000F759D /* SettingScreen.swift */,
-				9AB2888C2B814A03000F759D /* CardScreen.swift */,
+				9ADAC5402B81CAD400A5C10F /* CardScreen */,
+				9ADAC53F2B81CAC000A5C10F /* GeneratePassword */,
+				9ADAC53E2B81CAB600A5C10F /* Settings */,
+				9ADAC53D2B81CAA000A5C10F /* Password */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		9ADAC53D2B81CAA000A5C10F /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				9AB288862B814517000F759D /* PasswordScreen.swift */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		9ADAC53E2B81CAB600A5C10F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9AB2888A2B81496C000F759D /* SettingScreen.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		9ADAC53F2B81CAC000A5C10F /* GeneratePassword */ = {
+			isa = PBXGroup;
+			children = (
+				9AB288882B8145A2000F759D /* GeneratePasswordScreen.swift */,
+			);
+			path = GeneratePassword;
+			sourceTree = "<group>";
+		};
+		9ADAC5402B81CAD400A5C10F /* CardScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9AB2888C2B814A03000F759D /* CardScreen.swift */,
+			);
+			path = CardScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
