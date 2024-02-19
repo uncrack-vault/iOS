@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AB04F292B8298FD002BEAC5 /* EditPasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB04F282B8298FD002BEAC5 /* EditPasswordScreen.swift */; };
 		9AB288782B813F44000F759D /* UnCrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB288772B813F44000F759D /* UnCrackApp.swift */; };
 		9AB2887A2B813F44000F759D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB288792B813F44000F759D /* ContentView.swift */; };
 		9AB2887C2B813F45000F759D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB2887B2B813F45000F759D /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9AB04F282B8298FD002BEAC5 /* EditPasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPasswordScreen.swift; sourceTree = "<group>"; };
 		9AB288742B813F44000F759D /* UnCrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnCrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB288772B813F44000F759D /* UnCrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnCrackApp.swift; sourceTree = "<group>"; };
 		9AB288792B813F44000F759D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			children = (
 				9AB288862B814517000F759D /* PasswordScreen.swift */,
 				9ADAC54A2B81E6CC00A5C10F /* AddPasswordScreen.swift */,
+				9AB04F282B8298FD002BEAC5 /* EditPasswordScreen.swift */,
 			);
 			path = Password;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB04F292B8298FD002BEAC5 /* EditPasswordScreen.swift in Sources */,
 				9ADAC54B2B81E6CC00A5C10F /* AddPasswordScreen.swift in Sources */,
 				9ADAC54E2B81F2E600A5C10F /* UCTextField.swift in Sources */,
 				9ADAC5502B81FF6000A5C10F /* UCButton.swift in Sources */,

@@ -16,37 +16,39 @@ struct PasswordScreen: View {
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading) {
+            ZStack(alignment: .bottomTrailing) {
                 List {
                     ForEach(password) { password in
-                        VStack(alignment: .leading, spacing: 6) {
-                            Text(password.name!)
-                                .bold()
-                            
-                            Text(password.email!)
-                                .foregroundStyle(Color.gray)
+                        NavigationLink(destination: EditPasswordScreen(account: password)) {
+                            HStack {
+                                VStack(alignment: .leading, spacing: 6) {
+                                    Text(password.name!)
+                                        .bold()
+                                    
+                                    Text(password.email!)
+                                        .foregroundStyle(Color.gray)
+                                }
+                            }
                         }
                     }
                     .onDelete(perform: deletePassword)
                 }
+                .navigationTitle("Passwords")
                 .listStyle(.plain)
+                
+                Button(action: {
+                    
+                }, label: {
+                    Image(systemName: "plus")
+                        .font(.title.weight(.semibold))
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(Color.white)
+                        .clipShape(Circle())
+                        .shadow(radius: 4, x: 0, y: 4)
+
+                })
                 .padding()
-            }
-            .navigationTitle("Passwords")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        showAddView.toggle()
-                    } label: {
-                        Label("Add Password", systemImage: "plus.circle")
-                    }
-                }
-                ToolbarItem(placement: .navigationBarLeading) {
-                    EditButton()
-                }
-            }
-            .sheet(isPresented: $showAddView) {
-                AddPasswordScreen()
             }
         }
         .navigationViewStyle(.stack)
