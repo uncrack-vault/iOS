@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A9AB52D2B83ECA100FE8E35 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9AB52C2B83ECA100FE8E35 /* SplashScreen.swift */; };
 		9AB04F292B8298FD002BEAC5 /* EditPasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB04F282B8298FD002BEAC5 /* EditPasswordScreen.swift */; };
 		9AB288782B813F44000F759D /* UnCrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB288772B813F44000F759D /* UnCrackApp.swift */; };
 		9AB2887A2B813F44000F759D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB288792B813F44000F759D /* ContentView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A9AB52C2B83ECA100FE8E35 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		9AB04F282B8298FD002BEAC5 /* EditPasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPasswordScreen.swift; sourceTree = "<group>"; };
 		9AB288742B813F44000F759D /* UnCrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnCrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB288772B813F44000F759D /* UnCrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnCrackApp.swift; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A9AB52B2B83EC9000FE8E35 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				9A9AB52C2B83ECA100FE8E35 /* SplashScreen.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
 		9AB2886B2B813F44000F759D = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 		9AB288852B8144DB000F759D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9A9AB52B2B83EC9000FE8E35 /* Intro */,
 				9ADAC5402B81CAD400A5C10F /* CardScreen */,
 				9ADAC53F2B81CAC000A5C10F /* GeneratePassword */,
 				9ADAC53E2B81CAB600A5C10F /* Settings */,
@@ -230,6 +241,7 @@
 				9ADAC5472B81D1E800A5C10F /* PasswordModel.xcdatamodeld in Sources */,
 				9AB2888B2B81496C000F759D /* SettingScreen.swift in Sources */,
 				9AB288872B814517000F759D /* PasswordScreen.swift in Sources */,
+				9A9AB52D2B83ECA100FE8E35 /* SplashScreen.swift in Sources */,
 				9AB288892B8145A2000F759D /* GeneratePasswordScreen.swift in Sources */,
 				9AB2887A2B813F44000F759D /* ContentView.swift in Sources */,
 				9ADAC5492B81D30D00A5C10F /* DataController.swift in Sources */,
