@@ -84,6 +84,7 @@ struct AddPasswordScreen: View {
                 .buttonStyle(UCButton())
             }
             .padding()
+            .navigationTitle("Add Password")
             .toolbar(.hidden, for: .tabBar)
         }
     }

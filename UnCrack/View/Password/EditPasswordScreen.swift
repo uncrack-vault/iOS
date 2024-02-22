@@ -86,6 +86,8 @@ struct EditPasswordScreen: View {
                 .buttonStyle(UCButton())
             }
             .padding()
+            .navigationTitle("Edit Password")
+            .toolbar(.hidden, for: .tabBar)
         }
     }
 }
