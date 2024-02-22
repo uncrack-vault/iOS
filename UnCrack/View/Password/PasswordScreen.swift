@@ -36,9 +36,7 @@ struct PasswordScreen: View {
                 .navigationTitle("Passwords")
                 .listStyle(.plain)
                 
-                Button(action: {
-                    
-                }, label: {
+                NavigationLink(destination: AddPasswordScreen(), label: {
                     Image(systemName: "plus")
                         .font(.title.weight(.semibold))
                         .padding()
