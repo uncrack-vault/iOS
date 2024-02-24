@@ -28,7 +28,7 @@ class DataController: ObservableObject {
         }
     }
     
-    func addPassword(name: String, email: String, username: String, password: String, context: NSManagedObjectContext) {
+    func addPassword(name: String, email: String, username: String, password: String, note: String, context: NSManagedObjectContext) {
         let account = Password(context: context)
         account.id = UUID()
         account.date = Date()
@@ -36,16 +36,18 @@ class DataController: ObservableObject {
         account.email = email
         account.username = username
         account.password = password
+        account.note = note
         
         save(context: context)
     }
     
-    func editPassword(account: Password, name: String, email: String, username: String, password: String, context: NSManagedObjectContext) {
+    func editPassword(account: Password, name: String, email: String, username: String, password: String, note: String, context: NSManagedObjectContext) {
         account.date = Date()
         account.name = name
         account.email = email
         account.username = username
         account.password = password
+        account.note = note
         
         save(context: context)
     }

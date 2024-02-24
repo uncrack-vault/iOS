@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A9AB52D2B83ECA100FE8E35 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9AB52C2B83ECA100FE8E35 /* SplashScreen.swift */; };
+		9AB04F292B8298FD002BEAC5 /* EditPasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB04F282B8298FD002BEAC5 /* EditPasswordScreen.swift */; };
 		9AB288782B813F44000F759D /* UnCrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB288772B813F44000F759D /* UnCrackApp.swift */; };
 		9AB2887A2B813F44000F759D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB288792B813F44000F759D /* ContentView.swift */; };
 		9AB2887C2B813F45000F759D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB2887B2B813F45000F759D /* Assets.xcassets */; };
@@ -17,9 +19,14 @@
 		9AB2888D2B814A03000F759D /* CardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB2888C2B814A03000F759D /* CardScreen.swift */; };
 		9ADAC5472B81D1E800A5C10F /* PasswordModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAC5452B81D1E800A5C10F /* PasswordModel.xcdatamodeld */; };
 		9ADAC5492B81D30D00A5C10F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAC5482B81D30D00A5C10F /* DataController.swift */; };
+		9ADAC54B2B81E6CC00A5C10F /* AddPasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAC54A2B81E6CC00A5C10F /* AddPasswordScreen.swift */; };
+		9ADAC54E2B81F2E600A5C10F /* UCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAC54D2B81F2E600A5C10F /* UCTextField.swift */; };
+		9ADAC5502B81FF6000A5C10F /* UCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAC54F2B81FF6000A5C10F /* UCButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A9AB52C2B83ECA100FE8E35 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		9AB04F282B8298FD002BEAC5 /* EditPasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPasswordScreen.swift; sourceTree = "<group>"; };
 		9AB288742B813F44000F759D /* UnCrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnCrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB288772B813F44000F759D /* UnCrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnCrackApp.swift; sourceTree = "<group>"; };
 		9AB288792B813F44000F759D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,6 +38,9 @@
 		9AB2888C2B814A03000F759D /* CardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScreen.swift; sourceTree = "<group>"; };
 		9ADAC5462B81D1E800A5C10F /* PasswordModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PasswordModel.xcdatamodel; sourceTree = "<group>"; };
 		9ADAC5482B81D30D00A5C10F /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		9ADAC54A2B81E6CC00A5C10F /* AddPasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordScreen.swift; sourceTree = "<group>"; };
+		9ADAC54D2B81F2E600A5C10F /* UCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCTextField.swift; sourceTree = "<group>"; };
+		9ADAC54F2B81FF6000A5C10F /* UCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A9AB52B2B83EC9000FE8E35 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				9A9AB52C2B83ECA100FE8E35 /* SplashScreen.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
 		9AB2886B2B813F44000F759D = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +81,7 @@
 		9AB288762B813F44000F759D /* UnCrack */ = {
 			isa = PBXGroup;
 			children = (
+				9ADAC54C2B81F2B600A5C10F /* Style */,
 				9ADAC5442B81D1CE00A5C10F /* DataModel */,
 				9AB288852B8144DB000F759D /* View */,
 				9AB288772B813F44000F759D /* UnCrackApp.swift */,
@@ -84,6 +103,7 @@
 		9AB288852B8144DB000F759D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9A9AB52B2B83EC9000FE8E35 /* Intro */,
 				9ADAC5402B81CAD400A5C10F /* CardScreen */,
 				9ADAC53F2B81CAC000A5C10F /* GeneratePassword */,
 				9ADAC53E2B81CAB600A5C10F /* Settings */,
@@ -96,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				9AB288862B814517000F759D /* PasswordScreen.swift */,
+				9ADAC54A2B81E6CC00A5C10F /* AddPasswordScreen.swift */,
+				9AB04F282B8298FD002BEAC5 /* EditPasswordScreen.swift */,
 			);
 			path = Password;
 			sourceTree = "<group>";
@@ -131,6 +153,15 @@
 				9ADAC5482B81D30D00A5C10F /* DataController.swift */,
 			);
 			path = DataModel;
+			sourceTree = "<group>";
+		};
+		9ADAC54C2B81F2B600A5C10F /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				9ADAC54D2B81F2E600A5C10F /* UCTextField.swift */,
+				9ADAC54F2B81FF6000A5C10F /* UCButton.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +234,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AB04F292B8298FD002BEAC5 /* EditPasswordScreen.swift in Sources */,
+				9ADAC54B2B81E6CC00A5C10F /* AddPasswordScreen.swift in Sources */,
+				9ADAC54E2B81F2E600A5C10F /* UCTextField.swift in Sources */,
+				9ADAC5502B81FF6000A5C10F /* UCButton.swift in Sources */,
 				9ADAC5472B81D1E800A5C10F /* PasswordModel.xcdatamodeld in Sources */,
 				9AB2888B2B81496C000F759D /* SettingScreen.swift in Sources */,
 				9AB288872B814517000F759D /* PasswordScreen.swift in Sources */,
+				9A9AB52D2B83ECA100FE8E35 /* SplashScreen.swift in Sources */,
 				9AB288892B8145A2000F759D /* GeneratePasswordScreen.swift in Sources */,
 				9AB2887A2B813F44000F759D /* ContentView.swift in Sources */,
 				9ADAC5492B81D30D00A5C10F /* DataController.swift in Sources */,
