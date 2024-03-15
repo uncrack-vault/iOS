@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A78D8762BA4E323000576AB /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A78D8752BA4E323000576AB /* OnboardingScreen.swift */; };
+		9A78D8782BA4E358000576AB /* OnboardingItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A78D8772BA4E358000576AB /* OnboardingItems.swift */; };
+		9A78D87B2BA4E4D3000576AB /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A78D87A2BA4E4D3000576AB /* Storage.swift */; };
+		9A78D87F2BA4EC53000576AB /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A78D87E2BA4EC53000576AB /* LoginScreen.swift */; };
+		9A78D8822BA4ED42000576AB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 9A78D8812BA4ED42000576AB /* Lottie */; };
 		9A9AB52D2B83ECA100FE8E35 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9AB52C2B83ECA100FE8E35 /* SplashScreen.swift */; };
 		9AB04F292B8298FD002BEAC5 /* EditPasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB04F282B8298FD002BEAC5 /* EditPasswordScreen.swift */; };
 		9AB288782B813F44000F759D /* UnCrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB288772B813F44000F759D /* UnCrackApp.swift */; };
@@ -25,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A78D8752BA4E323000576AB /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
+		9A78D8772BA4E358000576AB /* OnboardingItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItems.swift; sourceTree = "<group>"; };
+		9A78D87A2BA4E4D3000576AB /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		9A78D87E2BA4EC53000576AB /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		9A9AB52C2B83ECA100FE8E35 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		9AB04F282B8298FD002BEAC5 /* EditPasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPasswordScreen.swift; sourceTree = "<group>"; };
 		9AB288742B813F44000F759D /* UnCrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnCrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,16 +57,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A78D8822BA4ED42000576AB /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9A9AB52B2B83EC9000FE8E35 /* Intro */ = {
+		9A78D8732BA4E16A000576AB /* splash */ = {
 			isa = PBXGroup;
 			children = (
 				9A9AB52C2B83ECA100FE8E35 /* SplashScreen.swift */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
+		9A78D8742BA4E19F000576AB /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				9A78D8752BA4E323000576AB /* OnboardingScreen.swift */,
+				9A78D8772BA4E358000576AB /* OnboardingItems.swift */,
+			);
+			path = onboarding;
+			sourceTree = "<group>";
+		};
+		9A78D8792BA4E4C2000576AB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9A78D87A2BA4E4D3000576AB /* Storage.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9A78D87C2BA4EC37000576AB /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				9A78D87D2BA4EC44000576AB /* login */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		9A78D87D2BA4EC44000576AB /* login */ = {
+			isa = PBXGroup;
+			children = (
+				9A78D87E2BA4EC53000576AB /* LoginScreen.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		9A9AB52B2B83EC9000FE8E35 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				9A78D8742BA4E19F000576AB /* onboarding */,
+				9A78D8732BA4E16A000576AB /* splash */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -81,6 +133,7 @@
 		9AB288762B813F44000F759D /* UnCrack */ = {
 			isa = PBXGroup;
 			children = (
+				9A78D8792BA4E4C2000576AB /* Utils */,
 				9ADAC54C2B81F2B600A5C10F /* Style */,
 				9ADAC5442B81D1CE00A5C10F /* DataModel */,
 				9AB288852B8144DB000F759D /* View */,
@@ -103,6 +156,7 @@
 		9AB288852B8144DB000F759D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9A78D87C2BA4EC37000576AB /* auth */,
 				9A9AB52B2B83EC9000FE8E35 /* Intro */,
 				9ADAC5402B81CAD400A5C10F /* CardScreen */,
 				9ADAC53F2B81CAC000A5C10F /* GeneratePassword */,
@@ -180,6 +234,9 @@
 			dependencies = (
 			);
 			name = UnCrack;
+			packageProductDependencies = (
+				9A78D8812BA4ED42000576AB /* Lottie */,
+			);
 			productName = UnCrack;
 			productReference = 9AB288742B813F44000F759D /* UnCrack.app */;
 			productType = "com.apple.product-type.application";
@@ -208,6 +265,9 @@
 				Base,
 			);
 			mainGroup = 9AB2886B2B813F44000F759D;
+			packageReferences = (
+				9A78D8802BA4ED42000576AB /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = 9AB288752B813F44000F759D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -240,11 +300,15 @@
 				9ADAC5502B81FF6000A5C10F /* UCButton.swift in Sources */,
 				9ADAC5472B81D1E800A5C10F /* PasswordModel.xcdatamodeld in Sources */,
 				9AB2888B2B81496C000F759D /* SettingScreen.swift in Sources */,
+				9A78D87F2BA4EC53000576AB /* LoginScreen.swift in Sources */,
 				9AB288872B814517000F759D /* PasswordScreen.swift in Sources */,
+				9A78D8782BA4E358000576AB /* OnboardingItems.swift in Sources */,
 				9A9AB52D2B83ECA100FE8E35 /* SplashScreen.swift in Sources */,
 				9AB288892B8145A2000F759D /* GeneratePasswordScreen.swift in Sources */,
 				9AB2887A2B813F44000F759D /* ContentView.swift in Sources */,
+				9A78D8762BA4E323000576AB /* OnboardingScreen.swift in Sources */,
 				9ADAC5492B81D30D00A5C10F /* DataController.swift in Sources */,
+				9A78D87B2BA4E4D3000576AB /* Storage.swift in Sources */,
 				9AB288782B813F44000F759D /* UnCrackApp.swift in Sources */,
 				9AB2888D2B814A03000F759D /* CardScreen.swift in Sources */,
 			);
@@ -452,6 +516,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9A78D8802BA4ED42000576AB /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9A78D8812BA4ED42000576AB /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A78D8802BA4ED42000576AB /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		9ADAC5452B81D1E800A5C10F /* PasswordModel.xcdatamodeld */ = {
