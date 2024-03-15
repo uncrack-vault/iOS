@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "uncrack-logo.png",
+      "filename" : "u.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "uncrack-logo 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "uncrack-logo 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
